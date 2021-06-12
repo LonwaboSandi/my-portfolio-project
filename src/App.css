@@ -73,6 +73,8 @@ nav ul li{
   background-size: cover;
   background-position: center;
   height: 90vh;
+  background-color: var(--primary-dark);
+ 
 }
 .main-info{
   display:flex;
@@ -89,7 +91,7 @@ nav ul li{
   z-index: 1;
 }
 .main-info h1{
-  color: var(--primary-orange);
+  color: #03071d;
   text-transform: uppercase;
 }
 
@@ -140,4 +142,90 @@ nav ul li{
  .particles-canvas{
    display: none;
  }
+}
+
+
+/*************ABOUT ME***************/
+.section{
+  background-color: rgb(43, 43, 85);
+  
+}
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.title p {
+  text-decoration-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-img {
+  margin-bottom: 2rem;
+  
+}
+.about-img img {
+  border-radius: var(--radius);
+  object-fit: cover;
+  height: 20rem;
+}
+@media screen and (min-width: 992px) {
+  .about-img {
+    margin-bottom: 0;
+  }
+
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+.about {
+  
+  border-radius: 2rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+@media screen and (min-width: 992px) {
+  .imageSize{
+    width: 50%;
+    height: 80px;
+    margin-left: 6rem;
+  }
+
+}
+.imageSize{
+  width: 50%;
+  height: 80px;
+  margin-left: 6rem;
+  border-radius: 50%;
+}
+
+ h2,h4,p{
+  color: #fff;
+  font-family: "Roboto Condesed" sans-serif;
+  
+}
+
+.about-content {
+  border-bottom-left-radius: 0.5rem;;
+  border-bottom-right-radius: 0.5rem;;
+  padding: 2rem 1.5rem;
+}
+/***********************SERVICES*************************/
+
+.Infomative, .service, .ecommerce{
+  width: 20rem;
+  height: 20rem;
+  background-color: rgb(203, 236, 83);
+  text-shadow: #03071d;
+  border-radius: 10%;
+  display: flex;
+  margin-left: 5rem;
+  text-align: center;
+  background-color: lightgreen ;
+  
+  
+
 }
