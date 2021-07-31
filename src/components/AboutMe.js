@@ -1,5 +1,5 @@
 import React from "react"; 
-import logo from "../Lonwabo.jpg";
+import logo from "../Lonwabo.jpeg";
 const AboutMe = () =>{
     return (
         <div class="section">

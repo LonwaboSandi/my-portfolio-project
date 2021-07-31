@@ -74,7 +74,7 @@ nav ul li{
   background: url(wall-and-laptop.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
   background-color: var(--primary-dark);
  
 }
@@ -163,13 +163,14 @@ nav ul li{
 }
 
 .about-img {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   
 }
 .about-img img {
   border-radius: var(--radius);
   object-fit: cover;
-  height: 20rem;
+  height: 500px;
+  
 }
 @media screen and (min-width: 992px) {
   .about-img {
@@ -191,7 +192,7 @@ nav ul li{
 
 @media screen and (min-width: 992px) {
   .imageSize{
-    width: 50%;
+    width: 70%;
     height: 80px;
     margin-left: 6rem;
   }
@@ -220,70 +221,61 @@ nav ul li{
 
 /*-------------------------PORFOLIO-------------------------------*/
 
-.container-port{
-  width: 1280px;
-  
-  margin: 70px auto 0;
-  display: flex; 
-  flex-direction: row;
-  flex-wrap:wrap;
-
-}
-
-.container-port .box{
+.container-image{
   position: relative;
-  width: 300px;
-  height: 300px;
-  background: #ff0;
-  margin: 10px;
-  box-sizing: border-box;
+  column-count: 4;
+  padding: 20px;
+}
+.image-menu{
   display: inline-block;
-}
-
-.container-port .box .imgBox{
-  position:relative;
+  margin-bottom: 10px;
   overflow: hidden;
-
 }
-
-.container-port .box .imgBox img{
-  max-width: 100%;
-  transition: transform 2s;
+.image-menu img{
+  width: 100%;
+  transition: 0.25s ease-in-out;
 }
-.container-port .box:hover .imgBox img{
-  transform: scale(1.2);
-
+.image-menu:hover img{
+  transform: scale(1.1);
 }
-.container-port .box .details{
+.image-menu h1{
   position: absolute;
-  top: 10px;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
-  background: rgba(0, 0, 0, .8);
-  transform: scaleY(0);
-  transition: transform .5s; 
+  padding: 5px;
+  margin: 5px;
+  font-size: 25px;
+  background: #5c5c5c;
+  color: #ffffff;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.25s ease-in-out;
 }
-.container-port .box:hover .details{
-  transform: scaleY(1);
+.image-menu:hover h1{
+  opacity: 0.5;
 }
-.container-port .box .details content{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  padding: 15px;
-  color: #fff;
-
+@media screen and (max-width:1024px){
+  h1{
+      font-size: 20px;
+  }
 }
-.container-port .box .details content h2{
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  color: #ff0;
+@media screen and (max-width:768px){
+  .container-image{
+      column-count: 3;
+  }
 }
-.container-port .box .details content p{
-  margin: 10px 0 0;
-  padding: 0;
-  
+@media screen and (max-width:425px){
+  .container-image{
+      column-count: 2;
+  }
+  h1{
+      font-size: 12px;
+  }
+}
+@media screen and (max-width:375px){
+  .container-image{
+      column-count: 1;
+  }
+  h1{
+      font-size: 15px;
+  }
 }
